@@ -1,0 +1,15 @@
+#fondo {
+    background-image: url('/assets/imgNiko/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.inline-content {
+    display: flex;
+    align-items: center;
+}
+
+.inline-content img {
+    max-width: 50px;
+    margin-right: 10px;
+}
