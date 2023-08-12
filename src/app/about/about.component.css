@@ -13,3 +13,8 @@
     max-width: 50px;
     margin-right: 10px;
 }
+.custom-card {
+    width: 250px; /* Ajusta el ancho de la tarjeta según tus necesidades */
+    height: 200px; /* Ajusta la altura de la tarjeta según tus necesidades */
+    /* Otras propiedades de estilo personalizadas */
+  }
