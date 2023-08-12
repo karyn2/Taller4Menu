@@ -27,28 +27,32 @@ const routes: Routes=[
   },
   {
     path:'alimentos',
-    component:AlimentosComponent
-  },
-  {
-    path:'comidaHumeda',
-    component:ComidaHumedaComponent
-  },
-  {
-    path:'concentrado',
-    component:ConcentradoComponent
-  },
+    component:AlimentosComponent,
+    children:[
+      {
+        path:'comidaHumeda',
+        component:ComidaHumedaComponent
+      },
+      {
+        path:'concentrado',
+        component:ConcentradoComponent
+      },
+    ]
+  },  
   {
     path:'accesorios',
-    component:AccesoriosComponent
-  },
-  {
-    path:'articulosPaseo',
-    component:ArticulosPaseoComponent
-  },
-  {
-    path:'juguetes',
-    component:JuguetesComponent
-  },
+    component:AccesoriosComponent,
+    children:[
+      {
+        path:'articulosPaseo',
+        component:ArticulosPaseoComponent
+      },
+      {
+        path:'juguetes',
+        component:JuguetesComponent
+      },
+    ]
+  },  
   {
     path:'about',
     component:AboutComponent

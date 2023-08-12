@@ -1,39 +1,17 @@
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4">Tienda Animales</span>
+    </a>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/home">Inicio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" routerLink="/alimentos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ALIMENTOS
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="/concentrado">Concentrado</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" routerLink="/comidaHumeda">Comida Humeda</a></li>            
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" routerLink="/accesorios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ACCESORIOS
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="/articulosPaseo">Articulos de Paseo</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" routerLink="/juguetes">Juguetes</a></li>            
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/about">Acerca de</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a routerLink="/home" class="nav-link" routerLinkActive="active">Inicio</a></li>
+      <li class="nav-item"><a routerLink="/alimentos" class="nav-link" routerLinkActive="active">Alimentos</a></li>
+      <li class="nav-item"><a routerLink="/accesorios" class="nav-link"routerLinkActive="active">Accesorios</a></li>
+      <li class="nav-item"><a routerLink="/about" class="nav-link"routerLinkActive="active">Acerca de</a></li>      
+    </ul>
+  </header>
+</div>
 
 <router-outlet></router-outlet>
