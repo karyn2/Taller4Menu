@@ -1,0 +1,72 @@
+<div class="mt-4 container">
+    <img src="/assets/img/popular.png" alt="Imagen"  width="600px"
+    [@hoverAnimation]="hoverState" (mouseover)="onHover()" (mouseleave)="onLeave()">
+
+    <div class="row containerInterno">
+        <div class="col-md-4">
+            <div class="card" [@cardAnimation]>
+                <img src="assets/img/comida1.jpg" alt="Imagen de la Tarjeta">
+                <h2>Título de la Tarjeta</h2>
+                <p>Contenido de la tarjeta.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" [@cardAnimation]>
+                <img src="assets/img/comida2.jpg" alt="Imagen de la Tarjeta" style="max-width: 260px; max-height: 370px;">
+                <h2>Título de la Tarjeta</h2>
+                <p>Contenido de la tarjeta.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" [@cardAnimation]>
+                <img src="assets/img/comida3.jpg" alt="Imagen de la Tarjeta">
+                <h2>Título de la Tarjeta</h2>
+                <p>Contenido de la tarjeta.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row containerInterno">
+        <div class="col-md-4">
+            <div class="card" [@cardAnimation]>
+                <img src="assets/img/comida4.jpg" alt="Imagen de la Tarjeta">
+                <h2>Título de la Tarjeta</h2>
+                <p>Contenido de la tarjeta.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" [@cardAnimation]>
+                <img src="assets/img/comida5.png" alt="Imagen de la Tarjeta" style="max-width: 260px; max-height: 370px;">
+                <h2>Título de la Tarjeta</h2>
+                <p>Contenido de la tarjeta.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" [@cardAnimation]>
+                <img src="assets/img/comida6.jpg" alt="Imagen de la Tarjeta"  style="max-width: 220px; margin-left: 40px; margin-top: 15px;">
+                <h2>Título de la Tarjeta</h2>
+                <p>Contenido de la tarjeta.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<footer class="footer mt -4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Contenido del lado izquierdo del footer -->
+        <p>&copy; 2023 developersUdenar. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-md-6">
+        <!-- Contenido del lado derecho del footer -->
+        <ul class="list-inline text-md-end">
+          <li class="list-inline-item"><a href="#">Política de Privacidad</a></li>
+          <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+

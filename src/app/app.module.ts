@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { ConcentradoComponent } from './concentrado/concentrado.component';
 import { ComidaHumedaComponent } from './comida-humeda/comida-humeda.component';
 import { ArticulosPaseoComponent } from './articulos-paseo/articulos-paseo.component';
 import { JuguetesComponent } from './juguetes/juguetes.component';
+import { AuxiliarAlimentosComponent } from './auxiliar-alimentos/auxiliar-alimentos.component';
 
 const routes: Routes=[
   {
@@ -29,6 +31,10 @@ const routes: Routes=[
     path:'alimentos',
     component:AlimentosComponent,
     children:[
+      {
+        path:'',
+        component:AuxiliarAlimentosComponent
+      },
       {
         path:'comidaHumeda',
         component:ComidaHumedaComponent
@@ -81,12 +87,14 @@ const routes: Routes=[
     ConcentradoComponent,
     ComidaHumedaComponent,
     ArticulosPaseoComponent,
-    JuguetesComponent
+    JuguetesComponent,
+    AuxiliarAlimentosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

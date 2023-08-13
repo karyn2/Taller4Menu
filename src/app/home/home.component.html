@@ -1,26 +1,78 @@
 <div class="row justify-content-center align-items-center g-2">
-    <div style="width: 90%;">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === activeIndex }">
-                <img src="{{ image }}" class="d-block w-100" alt="...">
-              </div>
+  <div class="col-12 col-md-12"> <!-- Ajusta el tamaño del carousel según tus necesidades -->
+      <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === activeIndex }">
+              <img src="{{ image }}" class="d-block w-100 h-auto" style="max-height: 500px;" alt="..."> <!-- Ajusta la altura máxima según tus necesidades -->
             </div>
-            <button class="carousel-control-prev" type="button" (click)="prevImage()">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" (click)="nextImage()">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-    </div>  
+          <button class="carousel-control-prev" type="button" (click)="prevImage()">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" (click)="nextImage()">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>  
 </div>
 
-<div class="text-center mt-4">
+<div class="text-center mt-4 contenedorTexto">
     <p class="titulo"><b>Bienvenidos a tiernitos.com</b> </p>
     <p class="titulo1">Tu tienda de mascotas en Ipiales</p>
 
+    <p class="titulo3">
+       <b class="titulo2">tiernitos.com </b>un rincón virtual diseñado para todos los amantes de las mascotas.
+       Explora nuestro mundo en línea y descubre un paraíso de accesorios y productos de 
+       primera calidad, pensados para consentir y cuidar a tus fieles compañeros.
+
+       En <b class="titulo2">tiernitos.com </b>, te invitamos a adentrarte en una experiencia de compra única. Nuestra cuidadosa selección de productos abarca desde juguetes interactivos hasta alimentos nutritivos, y desde camas cómodas hasta ropa encantadora para tus peludos amigos. Cada artículo que encontrarás en nuestra tienda virtual está pensado para enriquecer la vida de tus mascotas y fortalecer vuestro vínculo.
+    </p>
+    <br>
+    <div class="row mt-4">
+      <div class="col-md-6">
+       <img src="/assets/img/mascotaGato.png" alt="Imagen"  width="500px"
+        [@hoverAnimation]="hoverState" (mouseover)="onHover()" (mouseleave)="onLeave()">
+      </div>
+      <div class="col-md-6 contenedorInterno">
+          <p class="titulo3">
+            Nuestro equipo está compuesto por amantes de los animales, dispuestos a brindarte 
+            asesoramiento personalizado a través de la pantalla. Ya sea que necesites orientación
+            sobre la dieta adecuada para tu perro o gato, o si buscas el accesorio ideal para
+            satisfacer las necesidades de entretenimiento de tu mascota, estamos aquí para guiarte
+            en cada paso.
+            <br> <br>           
+            <i class="fas fa-check colorAzul"></i> El envío es gratis por compras superiores a 
+            $110.000 “Según ubicación”. <br> <br>  
+            <i class="fas fa-check colorAzul"></i> Tu pedido se entregará en el transcurso de las 
+            siguientes 24 horas hábiles,después de realizada la compra. <br> <br>  
+            <i class="fas fa-check colorAzul"></i> La página no esta habilitada para pagos con
+             tarjeta. <br> <br>  
+             <i class="fas fa-check colorAzul"></i> Escríbenos al WhatsApp y te enviaremos un link de pago “Aplica condiciones”.
+          </p>
+          
+      </div>
+
+    </div>
+
 </div>
+<br><br>
+<footer class="footer mt -4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Contenido del lado izquierdo del footer -->
+        <p>&copy; 2023 developersUdenar. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-md-6">
+        <!-- Contenido del lado derecho del footer -->
+        <ul class="list-inline text-md-end">
+          <li class="list-inline-item"><a href="#">Política de Privacidad</a></li>
+          <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 

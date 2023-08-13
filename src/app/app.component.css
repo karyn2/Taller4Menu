@@ -1,3 +1,18 @@
 .active{
     color:aqua;
 }
+
+.footer {
+    background-color: #dbeef0;
+    padding: 20px 0;
+    color: #333;
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+  }
+  
+  .footer a {
+    color: #333;
+    text-decoration: none;
+  }
