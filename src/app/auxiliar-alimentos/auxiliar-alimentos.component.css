@@ -2,6 +2,14 @@
     color: #F56A29;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.titulo2{
+  color: #2681F0;;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .card {
@@ -31,17 +39,13 @@
     padding:5%;
   }
 
-  .footer {
-    background-color: #dbeef0;
-    padding: 20px 0;
-    color: #333;
-  }
-  
-  .footer p {
-    margin-bottom: 0;
-  }
-  
-  .footer a {
-    color: #333;
-    text-decoration: none;
+ .cardP{
+  padding: 10px;
+ }
+
+  button {
+    width: 100px;
+    height: 40px;
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
+    transform-origin: center;
   }

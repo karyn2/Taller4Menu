@@ -1,0 +1,57 @@
+.titulo{
+    color: #2681F0;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo1{
+    color: #F56A29;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.titulo2{
+  color: #2681F0;;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 220px;
+    height: 500px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .container{
+    justify-content: center;
+  }
+
+  .containerInterno{
+    padding:5%;
+  }
+
+  .cardP{
+    padding: 10px;
+   }
+
+  button {
+    width: 100px;
+    height: 40px;
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
+    transform-origin: center;
+  }

@@ -14,6 +14,7 @@ export const cardAnimation = trigger('cardAnimation', [
   templateUrl: './auxiliar-alimentos.component.html',
   styleUrls: ['./auxiliar-alimentos.component.css'],
   animations: [
+    cardAnimation,
     trigger('hoverAnimation', [
       state('normal', style({
         transform: 'scale(1)',
@@ -23,6 +24,17 @@ export const cardAnimation = trigger('cardAnimation', [
       })),
       transition('normal <=> hovered', animate('200ms ease-in-out')),
     ]),
+    trigger('buttonAnimation', [
+      state('normal', style({
+        transform: 'rotate(0deg) scale(1)',
+        backgroundColor: 'transparent',
+      })),
+      state('hovered', style({
+        transform: 'rotate(360deg) scale(1.2)',
+        //backgroundColor: '#28D1E6',
+      })),
+      transition('normal <=> hovered', animate('200ms ease-in-out')),
+    ]),    
   ],
 })
 export class AuxiliarAlimentosComponent {
@@ -31,11 +43,21 @@ export class AuxiliarAlimentosComponent {
 
   onHover() {
     this.hoverState = 'hovered';
-    console.log('sobre la imagen')
   }
 
   onLeave() {
     this.hoverState = 'normal';
-    console.log('fuera de la imagen')
+  }
+
+  buttonStates: string[] = Array.from({ length: 6 }, () => 'normal'); // Cambiar 5 por la cantidad de botones
+
+  onButtonHover(buttonIndex: number) {
+    this.buttonStates[buttonIndex] = 'hovered';
+    console.log('sobre el botón');
+  }
+
+  onButtonLeave(buttonIndex: number) {
+    this.buttonStates[buttonIndex] = 'normal';
+    console.log('fuera del botón');
   }
 }
