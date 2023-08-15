@@ -1,0 +1,74 @@
+{
+  "articulos_paseo_mascotas": [
+    {
+      "nombre": "Bolso transportador",
+      "descripcion": "Bolso espacioso para llevar gatos y perros pequeños en paseos.",
+      "precio": 29.95,
+      "disponibilidad": true,
+      "colores_disponibles": ["rosa", "gris", "verde"],
+      "tamanio": "pequeno",
+      "tipo_mascota": ["gato", "perro pequeño"],
+      "imagen": "assets/img/7.png"
+    },
+    {
+      "nombre": "Forro para asiento",
+      "descripcion": "Forro acolchado para un control cómodo durante los paseos.",
+      "precio": 12.49,
+      "disponibilidad": false,
+      "colores_disponibles": ["morado", "negro"],
+      "tamanio": "grande",
+      "tipo_mascota": "perro",
+      "imagen": "assets/img/6.png"
+    },
+    {
+      "nombre": "Forro Cama para asiento",
+      "descripcion": "Cama plegable y portátil para que tu mascota descanse en cualquier lugar.",
+      "precio": 19.99,
+      "disponibilidad": true,
+      "colores_disponibles": ["azul", "verde"],
+      "tamanio": "mediano",
+      "tipo_mascota": ["perro", "gato"],
+      "imagen": "assets/img/5.png"
+    },
+    {
+      "nombre": "Maleta portátil",
+      "descripcion": "Maleta con bebedero incorporado para mantener a tu mascota hidratada en paseos.",
+      "precio": 9.95,
+      "disponibilidad": true,
+      "colores_disponibles": ["azul", "rosa", "verde"],
+      "tamanio": "pequeno",
+      "tipo_mascota": ["perro", "gato"],
+      "imagen": "assets/img/4.png"
+    },
+    {
+      "nombre": "Maleta para mascotas",
+      "descripcion": "Maleta cómoda y segura para llevar a tu pequeña mascota contigo.",
+      "precio": 34.99,
+      "disponibilidad": true,
+      "colores_disponibles": ["gris", "marron"],
+      "tamanio": "pequeno",
+      "tipo_mascota": ["perro pequeño", "gato"],
+      "imagen": "assets/img/3.png"
+    },
+    {
+      "nombre": "Maleta protectorres",
+      "descripcion": "Maleta resistentes para proteger las patas de tu mascota en superficies ásperas.",
+      "precio": 22.50,
+      "disponibilidad": true,
+      "colores_disponibles": ["negro", "rojo"],
+      "tamanio": "mediano",
+      "tipo_mascota": "perro",
+      "imagen": "assets/img/2.png"
+    },
+    {
+      "nombre": "Maleta reflectante",
+      "descripcion": "Maleta con material reflectante para mayor visibilidad durante los paseos nocturnos.",
+      "precio": 18.75,
+      "disponibilidad": true,
+      "colores_disponibles": ["amarillo", "naranja"],
+      "tamanio": "grande",
+      "tipo_mascota": "perro",
+      "imagen": "assets/img/1.png"
+    }
+  ]
+}
