@@ -1,0 +1,89 @@
+{
+    "juguetes_mascotas": [
+      {
+        "nombre": "Raton saltarin",
+        "imagen": "assets/img/8.png",
+        "descripcion": "Juguete de felpa en forma de ratón para gatos.",
+        "precio": 9.99,
+        "tipo": "GATOS"
+      },
+      {
+        "nombre": "Plumero para gatos",
+        "imagen": "assets/img/9.png",
+        "descripcion": "Plumero con plumas y campana para mantener a tu gato activo.",
+        "precio": 6.99,
+        "tipo": "Gatos"
+      },
+      {
+        "nombre": "Juguete interactivo con plumas",
+        "imagen": "assets/img/10.png",
+        "descripcion": "Juguete con plumas y varilla para entretener a tu gato.",
+        "precio": 12.49,
+        "tipo": "Gatos"
+      },
+      {
+        "nombre": "Hueso mordedero",
+        "imagen": "assets/img/11.png",
+        "descripcion": "Hueso de plástico resistente para perros que les encanta morder.",
+        "precio": 8.75,
+        "tipo": "Perros"
+      },
+      {
+        "nombre": "Pelota chirriante",
+        "imagen": "assets/img/12.png",
+        "descripcion": "Pelota con chirriador incorporado para divertir a tu mascota.",
+        "precio": 7.99,
+        "tipo": "Perros"
+      },
+      {
+        "nombre": "Juguete con cuerda",
+        "imagen": "assets/img/14.png",
+        "descripcion": "Juguete con cuerda para juegos de tira y afloja con tu perro.",
+        "precio": 11.25,
+        "tipo": "Perros"
+      },
+      {
+        "nombre": "Peluche suave",
+        "imagen": "assets/img/15.png",
+        "descripcion": "Peluche suave y tierno para que tu gato se acurruque.",
+        "precio": 5.49,
+        "tipo": "Gatos"
+      },
+      {
+        "nombre": "Pelota saltarina",
+        "imagen": "assets/img/16.png",
+        "descripcion": "Pelota que rebota de manera impredecible para entretener a tu perro.",
+        "precio": 10.99,
+        "tipo": "Perros"
+      },
+      {
+        "nombre": "Cuerda para morder",
+        "imagen": "assets/img/17.png",
+        "descripcion": "Juguete con plumas y campana para mantener a tu gato activo.",
+        "precio": 9.25,
+        "tipo": "Gatos"
+      },
+      {
+        "nombre": "Pelota de tenis chirriante",
+        "imagen": "assets/img/18.png",
+        "descripcion": "Pelota de tenis con chirriador para perros amantes del tenis.",
+        "precio": 6.99,
+        "tipo": "Perros"
+      },
+      {
+        "nombre": "Pollo chirriante",
+        "imagen": "assets/img/19.png",
+        "descripcion": "Pelota de goma duradera para jugar al lanzar y recoger.",
+        "precio": 12.99,
+        "tipo": "Perros"
+      },
+      {
+        "nombre": "Pelota chirriante",
+        "imagen": "assets/img/20.png",
+        "descripcion": "Pelota con chirriador incorporado para divertir a tu mascota.",
+        "precio": 7.49,
+        "tipo": "Gatos"
+      }
+    ]
+  }
+  

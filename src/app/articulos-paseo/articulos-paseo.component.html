@@ -1,1 +1,48 @@
-<p>articulos-paseo works!</p>
+<div class="banner">
+  <img src="/assets/img/banner1.jpg" alt="Banner de oferta especial" class="img-fluid banner-image">
+</div>
+
+
+<div class="mt-5 container">
+  <div class="row">
+    <div *ngIf="jsonData">
+      <div class="row">
+        <div
+          class="col-lg-3 col-md-6 mb-4"
+          *ngFor="
+            let articulo of jsonData.articulos_paseo_mascotas;
+            let i = index
+          "
+        >
+          <div class="card card-hover" [@fadeInOut]>
+            <img
+            [src]="articulo.imagen"
+            class="card-img-top"
+            alt="Imagen del artículo"
+          />
+          <div class="card-body">
+            <h3 class="card-title">{{ articulo.nombre }}</h3>
+            <p class="card-text">{{ articulo.descripcion }}</p>
+            <p class="card-text">
+              <strong>Precio:</strong> {{ articulo.precio | currency }}
+            </p>
+            <p class="card-text">
+              <strong
+                >Colores disponibles:</strong>
+                {{ articulo.colores_disponibles.join(", ") }}
+              
+            </p>
+            <p class="card-text">
+              <strong>Tamaño:</strong> {{ articulo.tamanio }}
+            </p>
+            <p class="card-text">
+              <strong>Tipo de mascota:</strong> {{ articulo.tipo_mascota }}
+            </p>
+            <button class="btn btn-primary">Agregar al carrito</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

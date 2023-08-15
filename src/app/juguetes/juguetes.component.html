@@ -1,1 +1,27 @@
-<p>juguetes works!</p>
+<app-banner [animationState]="bannerAnimationState" class="my-4"></app-banner><br>
+<button (click)="showBanner()" class="btn btn-primary me-2">Descuento de Hoy!</button>
+<button (click)="hideBanner()" class="btn btn-secondary">Ocultar Descuento</button>
+
+<br>
+<div *ngIf="jsonData$ | async as juguetes">
+    <div class="row mt-5">
+      <div
+        class="col-lg-3 col-md-3 mb-3"
+        *ngFor="let juguete of juguetes.juguetes_mascotas; let i = index"
+      >
+        <div class="card d-flex flex-column h-100"
+             [@cardHover]="hoveredCardIndex === i ? 'hovered' : 'normal'"
+             (mouseenter)="hoveredCardIndex = i"
+             (mouseleave)="hoveredCardIndex = -1">
+             <img [src]="juguete.imagen" class="card-img-top" alt="Imagen del juguete" />
+             <div class="card-body">
+               <h3 class="card-title">{{ juguete.nombre }}</h3>
+               <p class="card-text">{{ juguete.descripcion }}</p>
+               <p class="card-text"><strong>Precio: {{ juguete.precio | currency }}</strong></p>
+               <p class="card-text"><strong>Tipo: {{ juguete.tipo }}</strong></p>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
