@@ -1,0 +1,78 @@
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex: 1;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+/*.card-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+.fondo-tarjeta{
+  background-color: #186fda;
+  color: blanchedalmond;
+  height: 320px;
+  
+}
+
+#fondo {
+  background-image: url('/assets/imgNiko/bosque.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+#img-mismalinea {
+  margin-right: 1px; /* Espacio entre las imágenes */
+  width: 50% ;
+  height: auto;
+}
+
+.card-informacion{
+  border: 1px solid #ccc;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+.card-content {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.centro {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+#img-perrocollardos{
+  width: 60% ;
+  height: auto;
+}
+#img-mascotas{
+  width: 47% ;
+  height: auto;
+}

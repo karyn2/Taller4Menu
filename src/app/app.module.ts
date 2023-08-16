@@ -20,6 +20,7 @@ import { ArticulosPaseoComponent } from './articulos-paseo/articulos-paseo.compo
 import { JuguetesComponent } from './juguetes/juguetes.component';
 import { AuxiliarAlimentosComponent } from './auxiliar-alimentos/auxiliar-alimentos.component';
 import { BannerComponent } from './banner/banner.component';
+import { AuxiliarAccesoriosComponent } from './auxiliar-accesorios/auxiliar-accesorios.component';
 
 const routes: Routes=[
   {
@@ -52,6 +53,10 @@ const routes: Routes=[
     path:'accesorios',
     component:AccesoriosComponent,
     children:[
+      {
+        path:'',
+        component:AuxiliarAccesoriosComponent
+      },
       {
         path:'articulosPaseo',
         component:ArticulosPaseoComponent
@@ -92,7 +97,8 @@ const routes: Routes=[
     ArticulosPaseoComponent,
     JuguetesComponent,
     AuxiliarAlimentosComponent,
-    BannerComponent
+    BannerComponent,
+    AuxiliarAccesoriosComponent
   ],
   imports: [
     BrowserModule,

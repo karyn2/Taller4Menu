@@ -1,18 +1,16 @@
-<div class="container-fluid">
-    <div class="row">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-              <a routerLink="/accesorios/articulosPaseo" class="nav-link"routerLinkActive="active" >Articulos de Paseo</a>
-            </li>            
-            <li class="nav-item">
-              <a routerLink="/accesorios/juguetes" class="nav-link"routerLinkActive="active" >Juguetes</a> 
-            </li>
-          </ul>
-  
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-       
-            <router-outlet></router-outlet>
-
-      </main>
+<div class="container-fluid text-center mt-4">
+  <strong class="titulo">
+    ACCESORIOS
+  </strong>
+  <div class="row">
+    <div class="link-container mt-4">
+      <a routerLink="/accesorios/articulosPaseo" routerLinkActive="active" >Articulos de Paseo</a>
+      <i class="fas fa-chevron-right" style="color: #2681F0;"></i> &nbsp;&nbsp;
+      <a routerLink="/accesorios/juguetes" routerLinkActive="active" >Juguetes</a> 
     </div>
+
+    <main class=" mt-4">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
 </div>
