@@ -1,0 +1,25 @@
+.active {
+    color:#F56A29; 
+  }
+
+.titulo{
+    color: #2681F0;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .link-container a {
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .separator {
+    margin: 0 5px;
+    color: #ccc;
+  }
