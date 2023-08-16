@@ -48,7 +48,7 @@ export class ConcentradoComponent {
     this.hoverState = 'normal';
   }
 
-  buttonStates: string[] = Array.from({ length: 6 }, () => 'normal'); // Cambiar 5 por la cantidad de botones
+  buttonStates: string[] = Array.from({ length: 8 }, () => 'normal'); // Cambiar 5 por la cantidad de botones
 
   onButtonHover(buttonIndex: number) {
     this.buttonStates[buttonIndex] = 'hovered';

@@ -5,9 +5,12 @@
     <div class="row containerInterno " >
         <div class="col-md-3 col-sm-2">
             <div class="card cardP" [@cardAnimation]>
-                <img src="assets/img/comida1.jpg" alt="Imagen de la Tarjeta" style="max-width: 250px; max-height: 350px; margin-left: 20px;">
+                <img src="assets/img/comida1.jpg" alt="Imagen de la Tarjeta" style="max-width: 250px; max-height: 350px;">
                 <h2 class="titulo1">DOG SHOW</h2>
-                <p class="titulo2">Concentrado para cachorros</p>
+                <p class="titulo2">Concentrado para cachorros por 2 kilogramos 
+                    <br>
+                    <b>$12.500</b>
+                </p>
                 <div [@buttonAnimation]="buttonStates[1]">
                     <button class="btn btn-info text-white" (mouseenter)="onButtonHover(1)" (mouseleave)="onButtonLeave(1)">
                         Comprar
@@ -17,9 +20,12 @@
         </div>
         <div class="col-md-3">
             <div class="card cardP" [@cardAnimation]>
-                <img src="assets/img/comida2.jpg" alt="Imagen de la Tarjeta" style="max-width: 210px; max-height: 300px; margin-left: 25px;">
-                <h2 class="titulo1">DOG SHOW</h2>
-                <p class="titulo2">Concentrado para cachorros</p>
+                <img src="assets/img/comida2.jpg" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-3">HILL'S</h2>
+                <p class="titulo2">Concentrado para perros adultos por 1 kilogramo
+                    <br>
+                    <b>$8.500</b>
+                </p>
                 <div [@buttonAnimation]="buttonStates[2]">
                     <button class="btn btn-info text-white" (mouseenter)="onButtonHover(2)" (mouseleave)="onButtonLeave(2)">
                         Comprar
@@ -29,9 +35,12 @@
         </div>
         <div class="col-md-3">
             <div class="card cardP" [@cardAnimation]>
-                <img src="assets/img/comida3.jpg" alt="Imagen de la Tarjeta" style="max-width: 210px; max-height: 300px; margin-left: 25px;">
-                <h2 class="titulo1">DOG SHOW</h2>
-                <p class="titulo2">Concentrado para cachorros</p>
+                <img src="assets/img/comida3.jpg" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">RINGO</h2>
+                <p class="titulo2">Concentrado para cachorros por 1 kilogramo 
+                    <br>
+                    <b>$7.500</b>
+                </p>
                 <div [@buttonAnimation]="buttonStates[3]">
                     <button class="btn btn-info text-white" (mouseenter)="onButtonHover(3)" (mouseleave)="onButtonLeave(3)">
                         Comprar
@@ -41,24 +50,12 @@
         </div>
         <div class="col-md-3">
             <div class="card cardP" [@cardAnimation]>
-                <img src="assets/img/comida3.jpg" alt="Imagen de la Tarjeta" style="max-width: 210px; max-height: 300px; margin-left: 25px;">
-                <h2 class="titulo1">DOG SHOW</h2>
-                <p class="titulo2">Concentrado para cachorros</p>
-                <div [@buttonAnimation]="buttonStates[3]">
-                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(3)" (mouseleave)="onButtonLeave(3)">
-                        Comprar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row containerInterno">
-        <div class="col-md-4">
-            <div class="card cardP" [@cardAnimation]>
-                <img src="assets/img/comida4.jpg" alt="Imagen de la Tarjeta" style="max-width: 210px; max-height: 300px; margin-left: 25px;">
-                <h2 class="titulo1">DOG SHOW</h2>
-                <p class="titulo2">Concentrado para cachorros</p>
+                <img src="assets/img/concentrado1.png" alt="Imagen de la Tarjeta" class="mt-2" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">DOGURMET</h2>
+                <p class="titulo2">Concentrado para adultos por 8 kilogramos 
+                    <br>
+                    <b>$60.000</b>
+                </p>
                 <div [@buttonAnimation]="buttonStates[4]">
                     <button class="btn btn-info text-white" (mouseenter)="onButtonHover(4)" (mouseleave)="onButtonLeave(4)">
                         Comprar
@@ -66,11 +63,17 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+    </div>
+
+    <div class="row containerInterno " >
+        <div class="col-md-3 col-sm-2">
             <div class="card cardP" [@cardAnimation]>
-                <img src="assets/img/comida5.png" alt="Imagen de la Tarjeta" style="max-width: 210px; max-height: 300px; margin-left: 25px;">
-                <h2 class="titulo1">DOG SHOW</h2>
-                <p class="titulo2">Concentrado para cachorros</p>
+                <img src="assets/img/comida4.jpg" alt="Imagen de la Tarjeta" style="max-width: 250px; max-height: 350px;">
+                <h2 class="titulo1">DON KAT</h2>
+                <p class="titulo2">Concentrado para cachorros por 500 gramos 
+                    <br>
+                    <b>$5.000</b>
+                </p>
                 <div [@buttonAnimation]="buttonStates[5]">
                     <button class="btn btn-info text-white" (mouseenter)="onButtonHover(5)" (mouseleave)="onButtonLeave(5)">
                         Comprar
@@ -78,13 +81,46 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card cardP" [@cardAnimation]>
-                <img src="assets/img/comida6.jpg" alt="Imagen de la Tarjeta" style="max-width: 190px; max-height: 280px; margin-left: 50px;">
-                <h2 class="titulo1">DOG SHOW</h2>
-                <p class="titulo2">Concentrado para cachorros</p>
+                <img src="assets/img/comida5.png" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-3">HILL'S</h2>
+                <p class="titulo2">Concentrado para perros adultos por 1 kilogramo
+                    <br>
+                    <b>$9.500</b>
+                </p>
                 <div [@buttonAnimation]="buttonStates[6]">
                     <button class="btn btn-info text-white" (mouseenter)="onButtonHover(6)" (mouseleave)="onButtonLeave(6)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/comida6.jpg" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">RINGO</h2>
+                <p class="titulo2">Concentrado para adultos por 8 kilogramos 
+                    <br>
+                    <b>$70.500</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[7]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(7)" (mouseleave)="onButtonLeave(7)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/comida7.jpg" alt="Imagen de la Tarjeta" class="mt-2" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">WHISKAS</h2>
+                <p class="titulo2">Concentrado para adultos por 9 kilogramos 
+                    <br>
+                    <b>$90.000</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[8]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(8)" (mouseleave)="onButtonLeave(8)">
                         Comprar
                     </button>
                 </div>

@@ -1,1 +1,135 @@
-<p>comida-humeda works!</p>
+<div class="mt-4 container">
+    <img src="/assets/img/comidaHumeda2.png" alt="Imagen"  width="600px"
+    [@hoverAnimation]="hoverState" (mouseover)="onHover()" (mouseleave)="onLeave()">
+
+    <div class="row containerInterno " >
+        <div class="col-md-3 col-sm-2">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch1.jpg" alt="Imagen de la Tarjeta" style="max-width: 250px; max-height: 350px;">
+                <h2 class="titulo1">PEDIGREE</h2>
+                <p class="titulo2">Comida humeda para razas pequeñas por 100 gramos 
+                    <br>
+                    <b>$6.000</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[1]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(1)" (mouseleave)="onButtonLeave(1)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch2.jpg" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-3">FELIX CLASSIC</h2>
+                <p class="titulo2">Trocitos jugosos para gato, contenido por 85 gramos
+                    <br>
+                    <b>$8.000</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[2]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(2)" (mouseleave)="onButtonLeave(2)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch3.jpg" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">CHUNKY</h2>
+                <p class="titulo2">Trozos de pavo por 200 gramos para perros adultos
+                    <br>
+                    <b>$12.800</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[3]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(3)" (mouseleave)="onButtonLeave(3)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch4.jpg" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">CHUNKY</h2>
+                <p class="titulo2">Comida humeda lata por 385 gramos para perros adultos
+                    <br>
+                    <b>$20.000</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[4]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(4)" (mouseleave)="onButtonLeave(4)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row containerInterno " >
+        <div class="col-md-3 col-sm-2">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch5.jpg" alt="Imagen de la Tarjeta" style="max-width: 250px; max-height: 350px;">
+                <h2 class="titulo1">WHISKAS</h2>
+                <p class="titulo2">Comida humeda por 500 gramos 
+                    <br> <br>
+                    <b>$5.000</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[5]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(5)" (mouseleave)="onButtonLeave(5)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch6.jpg" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-3">AMALIA'S NUTRA</h2>
+                <p class="titulo2">Comida humeda sabor pollo y carbe de res por 100 gramos
+                    <br>
+                    <b>$9.500</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[6]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(6)" (mouseleave)="onButtonLeave(6)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch7.png" alt="Imagen de la Tarjeta" class="mt-4" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">PURE NATURE</h2>
+                <p class="titulo2">Comida humeda sabor pavo y vegetales por 300 gramos 
+                    <br>
+                    <b>$30.500</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[7]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(7)" (mouseleave)="onButtonLeave(7)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card cardP" [@cardAnimation]>
+                <img src="assets/img/ch8.jpg" alt="Imagen de la Tarjeta" class="mt-2" style="max-width: 210px; max-height: 300px;">
+                <h2 class="titulo1 mt-4">FELIX</h2>
+                <p class="titulo2">comida humeda en Lata sabor salmón por 80 gramos 
+                    <br> <br>
+                    <b>$10.000</b>
+                </p>
+                <div [@buttonAnimation]="buttonStates[8]">
+                    <button class="btn btn-info text-white" (mouseenter)="onButtonHover(8)" (mouseleave)="onButtonLeave(8)">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+
+
